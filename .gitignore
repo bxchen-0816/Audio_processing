@@ -1,0 +1,12 @@
+# 数据与缓存不要提交
+asc/data/TAU-urban-acoustic-scenes-2020-3class-development/
+asc/data/.cache/
+asc/runs/
+*.zip
+*.wav
+*.pt
+*.mat
+*.mlx
+
+# 但保留我们用到的 meta.csv
+!asc/data/meta.csv
