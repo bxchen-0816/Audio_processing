@@ -1,0 +1,20 @@
+# 音频与特征
+sr: 32000
+n_fft: 1024
+hop: 320          # 10 ms
+n_mels: 64
+fmin: 50
+fmax: 16000
+target_frames: 1000   # 每段统一到 1000 帧（约 10 s）
+
+# 训练
+batch_size: 16
+epochs: 30
+lr: 0.001
+seed: 42
+out_dir: asc/runs/tau2020m_baseline
+data_csv: F:/asc/data/meta.csv
+
+augment:
+  spec_augment: false   # 先关，跑通后再做消融
+  jitter: false
