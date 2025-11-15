@@ -1,0 +1,11 @@
+                precision    recall  f1-score   support
+
+        indoor     0.8405    0.8824    0.8609       442
+       outdoor     0.9299    0.9026    0.9160       544
+transportation     0.9485    0.9360    0.9422       453
+
+      accuracy                         0.9069      1439
+     macro avg     0.9063    0.9070    0.9064      1439
+  weighted avg     0.9083    0.9069    0.9074      1439
+
+ckpt: .\asc\runs\tau2020m_baseline\best.pt

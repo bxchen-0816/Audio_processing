@@ -1,0 +1,17 @@
+                  precision    recall  f1-score   support
+
+    indoor_music     0.9851    1.0000    0.9925        66
+    indoor_noise     0.9753    0.8495    0.9080        93
+   indoor_speech     0.9762    1.0000    0.9880        41
+           other     0.8199    0.9774    0.8918       177
+outdoor_birdsong     0.0000    0.0000    0.0000        17
+outdoor_dog_bark     0.0000    0.0000    0.0000         2
+    outdoor_rain     0.0000    0.0000    0.0000         4
+ outdoor_thunder     0.0000    0.0000    0.0000         3
+    outdoor_wind     0.0000    0.0000    0.0000         0
+
+        accuracy                         0.8908       403
+       macro avg     0.4174    0.4252    0.4200       403
+    weighted avg     0.8458    0.8908    0.8643       403
+
+ckpt: runs/custom_env_se/best.pt
