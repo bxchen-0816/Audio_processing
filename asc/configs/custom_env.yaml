@@ -1,0 +1,22 @@
+# 音频与特征
+sr: 32000
+n_fft: 1024
+hop: 320
+n_mels: 64
+fmin: 50
+fmax: 16000
+target_frames: 1000
+
+# 训练
+batch_size: 16
+epochs: 30
+lr: 0.0005          # 建议比从头训练时稍微小一点
+seed: 42
+
+out_dir: runs/custom_env_se
+data_csv: F:/asc/data/custom_env/meta/meta_custom.csv
+
+model:
+  use_se: true
+  pretrained_ckpt: runs/tau2020m_se/best.pt   # 旧模型的路径
+  freeze_backbone: false
